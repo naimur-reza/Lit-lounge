@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-container {
+    @apply max-w-6xl rounded-sm  mx-auto;
+}
+.btn{
+    @apply inline-flex px-6 py-3 bg-red-500 text-white font-medium shadow-lg rounded-md hover:bg-red-600 transition-all
+}
+.active{
+    @apply text-red-600
+}
