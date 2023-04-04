@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLoaderData, useNavigation } from "react-router-dom";
+import { Link, useLoaderData, useNavigation } from "react-router-dom";
 import Loader from "../Loading/Loader";
 
 const BookInfo = () => {
@@ -56,7 +56,7 @@ if(navigate.state === "loading"){
             </span>{" "}
           </p>
         )}
-        <button className="btn">Buy Now</button>
+        <Link to={url} className="btn">Buy Now</Link>
         <span className="font-bold ml-4 lg:ml-10">Price: {price}</span>
       </div>
     </div>
