@@ -8,6 +8,8 @@ const SingleBooks = ({ book }) => {
         <div className="cursor-pointer bg-gray-200 p-5 shadow-xl rounded-md  relative hover:-translate-y-2 transition duration-200">
       <div>
         <img className="object-cover w-full " src={image} alt="book-cover" />
+        <h1 className="lg:hidden text-lg">{title}</h1>
+        <p className="lg:hidden py-4 font-bold text-lg">Price: {price}</p>
       </div>
       <div className=" font-semibold  p-4 rounded-md bg-black bg-opacity-70 text-white absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-200 flex flex-col">
         <h1>{title}</h1>
