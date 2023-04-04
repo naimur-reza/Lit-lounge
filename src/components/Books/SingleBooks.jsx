@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SingleBooks = ({ book }) => {
   const { title, isbn13, subtitle, price, image, url } = book;
   return (
-    <div className=" p-4 shadow-lg rounded-md  relative hover:-translate-y-2 transition duration-200">
+    <Link to={`/book/${isbn13}`}>
+        <div className="cursor-pointer p-4 shadow-lg rounded-md  relative hover:-translate-y-2 transition duration-200">
       <div>
         <img className="object-cover w-full " src={image} alt="book-cover" />
       </div>
@@ -13,6 +15,7 @@ const SingleBooks = ({ book }) => {
         <p className="mt-auto text-lg">Price: {price}</p>
       </div>
     </div>
+    </Link>
   );
 };
 

@@ -16,7 +16,7 @@ const Header = () => {
                 to={"/"}
                 title="Title"
                 nextPage>
-                nextPage
+                Lit Lounge 
               </span>
             </NavLink>
           </div>
@@ -37,7 +37,7 @@ const Header = () => {
                 to={"/"}
                 title="Title"
                 nextPage>
-                NEXTPAGE
+                LIT LOUNGE
               </span>
             </NavLink>
             </div>

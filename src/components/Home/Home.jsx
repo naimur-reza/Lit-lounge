@@ -10,7 +10,7 @@ const Home = () => {
   };
   const { View } = useLottie(options);
   return (
-    <div className="my-container flex flex-col lg:flex-row items-center justify-between">
+    <div className="my-container flex flex-col-reverse lg:flex-row items-center justify-between">
       <div className="lg:w-[540px] space-y-2 p-3 lg:p-0">
         <h1 className="font-semibold">On Sale!</h1>
         <h1 className={"text-4xl text-slate-700  font-extrabold "}>
